@@ -1,0 +1,5 @@
+1;100;10;blue;
+2;200;10;green;
+3;350;10;red;
+4;400;10;darkYellow;
+5;800;10;darkMagenta;
