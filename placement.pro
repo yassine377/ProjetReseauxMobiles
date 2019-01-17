@@ -29,13 +29,15 @@ SOURCES += \
     Game.cpp \
     Hex.cpp \
     HexBoard.cpp \
-    antenne.cpp
+    antenne.cpp \
+    button.cpp
 
 HEADERS += \
     Game.h \
     Hex.h \
     HexBoard.h \
-    antenne.h
+    antenne.h \
+    button.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -43,4 +45,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    antenne.PNG
+    antenne.PNG \
+    immeuble.jpg

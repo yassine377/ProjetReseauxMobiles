@@ -4,20 +4,15 @@
 #include <QLabel>
 #include <QPainter>
 
-Game* game;
+Game* game; /**< TODO: game variable */
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-
-    //Antenne* ant = new Antenne(2,"../placement/Antennes_info.txt");
-    //ant->getId();
-    //ant->showId();*/
-
-    Antenne* ant = new Antenne();
-    ant->getHighestPower("../placement/Antennes_info.txt");
     game = new Game();
+   // Game* game=Game::getInstance();
     game->showMaximized();
+    //game->showFullScreen();
     game->displayMainMenu();
     return a.exec();
 }

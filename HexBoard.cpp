@@ -1,16 +1,34 @@
 #include "HexBoard.h"
 #include "Game.h"
 
-extern Game* game;
+extern Game* game; /**< TODO: describe */
 
+/**
+ * @brief constructeur HexBoard
+ *
+ */
 HexBoard::HexBoard(){
 
 }
 
+/**
+ * @brief retourne les mailles du HexBoard
+ *
+ * @return QList<Hex *>
+ */
 QList<Hex *> HexBoard::getHexes(){
     return hexes;
 }
 
+/**
+ * @brief placer les hexagones dans le HexBoard
+ * translate avec SHIFT sur chaque colonne dessinee
+ *
+ * @param x
+ * @param y
+ * @param cols
+ * @param rows
+ */
 void HexBoard::placeHexes(int x, int y, int cols, int rows){
     int X_SHIFT = 82;
     int Y_SHIFT = 41;
@@ -26,6 +44,13 @@ void HexBoard::placeHexes(int x, int y, int cols, int rows){
     }
 }
 
+/**
+ * @brief methode cree une colonne de mailles hexagone
+ *
+ * @param x
+ * @param y
+ * @param numOfRows
+ */
 void HexBoard::createHexColumn(int x, int y, int numOfRows){
     // creates a column of Hexes at the specified location with the specified
     // number of rows

@@ -1,0 +1,254 @@
+\hypertarget{class_game}{}\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+Inheritance diagram for Game\+:
+% FIG 0
+
+
+Collaboration diagram for Game\+:
+% FIG 1
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_a3d9b98f7c4a96ecf578f75b96c9f0e90}{start}} ()
+\begin{DoxyCompactList}\small\item\em cette methode commence la simulation avec la creation du \mbox{\hyperlink{class_hex_board}{Hex\+Board}} , place les mailles hecagonales et cree les antennes a placer ainsi que les obstacles . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a1beabf37abc60c2e8b1fc123d75a0fd9}{clicked\+Slot}} ()
+\begin{DoxyCompactList}\small\item\em methode appelee au clic du bouton reinitialize appel methode start vider les listes Antenne\+Item, Antenne\+Info et positions \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_a32d7e09112c37ff84736ea797c1eb7f0}{Game}} (Q\+Widget $\ast$parent=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em constructeur create Q\+Graphic\+Scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_af74fd203e3b31917ca9d4769fa608c48}{display\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em methode cree le menu principal de l\textquotesingle{}application 3 boutons Simulation , Guide d\textquotesingle{}utilisation , Quitter \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a82bbb20eac93665bba24f0da4bf68d27}\label{class_game_a82bbb20eac93665bba24f0da4bf68d27}} 
+Q\+String {\bfseries get\+Whos\+Turn} ()
+\item 
+void \mbox{\hyperlink{class_game_aa7c694cceaeae66edda49a0e52059929}{set\+Whos\+Turn}} (Q\+String \mbox{\hyperlink{class_antenne}{Antenne}})
+\item 
+void \mbox{\hyperlink{class_game_af01f609e7ecc9681f63a8849eb82ef18}{pick\+Up\+Card}} (\mbox{\hyperlink{class_hex}{Hex}} $\ast$card)
+\begin{DoxyCompactList}\small\item\em methode differencie antenne placee et antenne initiale (card) pour deplacer que les card \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a899968e870a05be0ca685138fbe12fda}{place\+Card}} (\mbox{\hyperlink{class_hex}{Hex}} $\ast$hex\+To\+Replace)
+\begin{DoxyCompactList}\small\item\em methode pour plusieurs action sur la scene \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a764f210df3c6afd4ba8b673b1b237cdb}\label{class_game_a764f210df3c6afd4ba8b673b1b237cdb}} 
+void {\bfseries next\+Antennes\+Turn} ()
+\item 
+void \mbox{\hyperlink{class_game_a14fffa93008a1b5ef00ff478c27fc34e}{remove\+From\+Deck}} (\mbox{\hyperlink{class_hex}{Hex}} $\ast$card, Q\+String \mbox{\hyperlink{class_antenne}{Antenne}})
+\begin{DoxyCompactList}\small\item\em methode enleve l\textquotesingle{}antenne initial pour deplacement \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_aed930aa8228e574019666854d9bd3496}\label{class_game_aed930aa8228e574019666854d9bd3496}} 
+void {\bfseries Test\+All\+Placed\+And\+Initalize\+Color} ()
+\item 
+void \mbox{\hyperlink{class_game_a2891d0920da38ccdc2df9a4b441ba084}{ouvrir\+Document}} ()
+\begin{DoxyCompactList}\small\item\em methode qui ouvre le pdf du manuel d utilisation de l\textquotesingle{}application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_ad761e49ff42758930e76b477d08ba068}{mouse\+Move\+Event}} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em faire suivre l antenne a la souris \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a704ba119948eebd1b6dfc547de967796}{mouse\+Press\+Event}} (Q\+Mouse\+Event $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_a8119e3b9a632906c6808fa294b46a92a}\label{class_game_a8119e3b9a632906c6808fa294b46a92a}} 
+Q\+Graphics\+Scene $\ast$ {\bfseries scene}
+\item 
+\mbox{\Hypertarget{class_game_a1e54f6d5ddf84cf70c35af3e19bc3aff}\label{class_game_a1e54f6d5ddf84cf70c35af3e19bc3aff}} 
+\mbox{\hyperlink{class_hex_board}{Hex\+Board}} $\ast$ {\bfseries hex\+Board}
+\item 
+\mbox{\Hypertarget{class_game_a809e4b905deff394ee22ed9b40c6530e}\label{class_game_a809e4b905deff394ee22ed9b40c6530e}} 
+\mbox{\hyperlink{class_hex}{Hex}} $\ast$ {\bfseries card\+To\+Place}
+\item 
+\mbox{\Hypertarget{class_game_a5a2f49ceff36b9223e1b93c52e72ca88}\label{class_game_a5a2f49ceff36b9223e1b93c52e72ca88}} 
+Q\+PointF {\bfseries original\+Pos}
+\item 
+\mbox{\Hypertarget{class_game_abc41cd5b297f28d0fbf9ea6fb42457f0}\label{class_game_abc41cd5b297f28d0fbf9ea6fb42457f0}} 
+Q\+List$<$ Q\+PointF $>$ {\bfseries positions}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_a32d7e09112c37ff84736ea797c1eb7f0}\label{class_game_a32d7e09112c37ff84736ea797c1eb7f0}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+constructeur create Q\+Graphic\+Scene 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a1beabf37abc60c2e8b1fc123d75a0fd9}\label{class_game_a1beabf37abc60c2e8b1fc123d75a0fd9}} 
+\index{Game@{Game}!clickedSlot@{clickedSlot}}
+\index{clickedSlot@{clickedSlot}!Game@{Game}}
+\subsubsection{\texorpdfstring{clickedSlot}{clickedSlot}}
+{\footnotesize\ttfamily void Game\+::clicked\+Slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+methode appelee au clic du bouton reinitialize appel methode start vider les listes Antenne\+Item, Antenne\+Info et positions 
+
+\mbox{\Hypertarget{class_game_af74fd203e3b31917ca9d4769fa608c48}\label{class_game_af74fd203e3b31917ca9d4769fa608c48}} 
+\index{Game@{Game}!displayMainMenu@{displayMainMenu}}
+\index{displayMainMenu@{displayMainMenu}!Game@{Game}}
+\subsubsection{\texorpdfstring{displayMainMenu()}{displayMainMenu()}}
+{\footnotesize\ttfamily void Game\+::display\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+methode cree le menu principal de l\textquotesingle{}application 3 boutons Simulation , Guide d\textquotesingle{}utilisation , Quitter 
+
+create the title text
+
+create the play button
+
+create the quit button
+
+create the quit button \mbox{\Hypertarget{class_game_ad761e49ff42758930e76b477d08ba068}\label{class_game_ad761e49ff42758930e76b477d08ba068}} 
+\index{Game@{Game}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!Game@{Game}}
+\subsubsection{\texorpdfstring{mouseMoveEvent()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily void Game\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+faire suivre l antenne a la souris 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+if there is a card\+To\+Place, then make it follow the mouse \mbox{\Hypertarget{class_game_a704ba119948eebd1b6dfc547de967796}\label{class_game_a704ba119948eebd1b6dfc547de967796}} 
+\index{Game@{Game}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!Game@{Game}}
+\subsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Game\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a2891d0920da38ccdc2df9a4b441ba084}\label{class_game_a2891d0920da38ccdc2df9a4b441ba084}} 
+\index{Game@{Game}!ouvrirDocument@{ouvrirDocument}}
+\index{ouvrirDocument@{ouvrirDocument}!Game@{Game}}
+\subsubsection{\texorpdfstring{ouvrirDocument()}{ouvrirDocument()}}
+{\footnotesize\ttfamily void Game\+::ouvrir\+Document (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+methode qui ouvre le pdf du manuel d utilisation de l\textquotesingle{}application. 
+
+\mbox{\Hypertarget{class_game_af01f609e7ecc9681f63a8849eb82ef18}\label{class_game_af01f609e7ecc9681f63a8849eb82ef18}} 
+\index{Game@{Game}!pickUpCard@{pickUpCard}}
+\index{pickUpCard@{pickUpCard}!Game@{Game}}
+\subsubsection{\texorpdfstring{pickUpCard()}{pickUpCard()}}
+{\footnotesize\ttfamily void Game\+::pick\+Up\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hex}{Hex}} $\ast$}]{card }\end{DoxyParamCaption})}
+
+
+
+methode differencie antenne placee et antenne initiale (card) pour deplacer que les card 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & \\
+\hline
+\end{DoxyParams}
+picks up the specified card Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_game_a899968e870a05be0ca685138fbe12fda}\label{class_game_a899968e870a05be0ca685138fbe12fda}} 
+\index{Game@{Game}!placeCard@{placeCard}}
+\index{placeCard@{placeCard}!Game@{Game}}
+\subsubsection{\texorpdfstring{placeCard()}{placeCard()}}
+{\footnotesize\ttfamily void Game\+::place\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hex}{Hex}} $\ast$}]{hex\+To\+Replace }\end{DoxyParamCaption})}
+
+
+
+methode pour plusieurs action sur la scene 
+
+
+\begin{DoxyEnumerate}
+\item deplacement antenne initiale vers maille \char`\"{}\+N\+O\+O\+N\+E\char`\"{}
+\item enregistrer chaque antenne dans Antenne\+Info
+\item afficher les informations de l\textquotesingle{}antenne placee
+\item afficher la zone de couverture avec graduation de la couleur
+\item teste si l\textquotesingle{}antenne suivante est placee sur une maille contenant deja une antenne
+\item lecture puissance recue sur les maille de la zone de couverture
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em hex\+To\+Replace} & \\
+\hline
+\end{DoxyParams}
+replaces the specified hex with the card\+To\+Place
+
+definir r,g,b de la couleur de l antenne
+
+dessiner les cercles de la zone de couverture
+
+eclaircir la couleur avec rgb en s eloignant de la maille antenne
+
+dessiner et colorier les cercles Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{class_game_a14fffa93008a1b5ef00ff478c27fc34e}\label{class_game_a14fffa93008a1b5ef00ff478c27fc34e}} 
+\index{Game@{Game}!removeFromDeck@{removeFromDeck}}
+\index{removeFromDeck@{removeFromDeck}!Game@{Game}}
+\subsubsection{\texorpdfstring{removeFromDeck()}{removeFromDeck()}}
+{\footnotesize\ttfamily void Game\+::remove\+From\+Deck (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hex}{Hex}} $\ast$}]{card,  }\item[{Q\+String}]{antenne }\end{DoxyParamCaption})}
+
+
+
+methode enleve l\textquotesingle{}antenne initial pour deplacement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & \\
+\hline
+{\em antenne} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_aa7c694cceaeae66edda49a0e52059929}\label{class_game_aa7c694cceaeae66edda49a0e52059929}} 
+\index{Game@{Game}!setWhosTurn@{setWhosTurn}}
+\index{setWhosTurn@{setWhosTurn}!Game@{Game}}
+\subsubsection{\texorpdfstring{setWhosTurn()}{setWhosTurn()}}
+{\footnotesize\ttfamily void Game\+::set\+Whos\+Turn (\begin{DoxyParamCaption}\item[{Q\+String}]{antenne }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em antenne} & \\
+\hline
+\end{DoxyParams}
+change the Q\+String
+
+change the Q\+Graphics\+Text\+Item \mbox{\Hypertarget{class_game_a3d9b98f7c4a96ecf578f75b96c9f0e90}\label{class_game_a3d9b98f7c4a96ecf578f75b96c9f0e90}} 
+\index{Game@{Game}!start@{start}}
+\index{start@{start}!Game@{Game}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily void Game\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+cette methode commence la simulation avec la creation du \mbox{\hyperlink{class_hex_board}{Hex\+Board}} , place les mailles hecagonales et cree les antennes a placer ainsi que les obstacles . 
+
+clear the screen
+
+test code T\+O\+DO remove Here is the call graph for this function\+:
+% FIG 6
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game.\+h\item 
+Game.\+cpp\end{DoxyCompactItemize}

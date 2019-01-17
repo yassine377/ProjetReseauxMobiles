@@ -1,0 +1,39 @@
+digraph "Game::placeCard"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node16 [label="Game::placeCard",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="methode pour plusieurs action sur la scene"];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="Hex::setOwner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hex.html#ace642e24e5b74836e6c89ba4bbcf5b11",tooltip=" "];
+  Node16 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="Antenne::setPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#a346b78f5b8d91c030b3cb7d9faba856c",tooltip="modifier la position de l'antenne"];
+  Node16 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="Antenne::getColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#ab145642aa53165675adae3c9e226490f",tooltip="retourne la couleur de l'antenne"];
+  Node16 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="Antenne::inRange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#ab42844a164c48cdb5456b0fb7670be74",tooltip="tester si une maille appartient a la zone de couverture d une antenne"];
+  Node20 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="Antenne::calculerDistance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#a8bd1a7c9666cea02b7ce151406afcd11",tooltip="calculer la distance entre une antenne et un point"];
+  Node21 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Antenne::getPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#aee00940f29ab1a76d38cd59805a626d7",tooltip="position antenne"];
+  Node20 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="Antenne::ZoneRadius",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#a86a4e146a48ecb15aae9ab134d1f1a00",tooltip="methode qui retourne le rayon de la zone de couverture de l antenne courante"];
+  Node16 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="Antenne::getZone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#ad4fb9ae2193ece70a39ee6f250d58d00",tooltip="retourne le rayon de la zone d une antenne"];
+  Node16 -> Node25 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="Antenne::CalculerPuissance\lRecue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#a3c035a910197df8e4b74bd81c99aa3d5",tooltip="calcule de la puissance recue suivant le model Free Space"];
+  Node25 -> Node26 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="Antenne::getPt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#a38e3f5a06286c85105f7f6a7e8e56d76",tooltip="retourne puissance antenne"];
+  Node25 -> Node27 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="Antenne::getFrequence",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#a4c3ac8f6bab5a76e987f39a630cb8342",tooltip="retourne frequence antenne"];
+  Node25 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node28 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="Antenne::Aligned",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#a1c895344d9a90bd6ad495ce1aa15604c",tooltip="teste si 3 points sont alignees"];
+  Node16 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node29 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="Antenne::getSpecialPuissance\lRecue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_antenne.html#ac222199ba9011db22cf64093a5f54acb",tooltip="Calculer la puissance recue suivant la formule d'Okumura Hata-Cost."];
+  Node29 -> Node26 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 -> Node27 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

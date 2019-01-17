@@ -1,0 +1,421 @@
+\hypertarget{class_antenne}{}\section{Antenne Class Reference}
+\label{class_antenne}\index{Antenne@{Antenne}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_antenne_aaa33f1ff8ebaf769fa62c3439a9ce7d2}{Antenne}} (int id, Q\+String Antennefile)
+\begin{DoxyCompactList}\small\item\em constructeur \mbox{\hyperlink{class_antenne}{Antenne}} pour la lecture de l\textquotesingle{}antenne dont l id est passe en argument \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_antenne_ab3e1b334578ccc7c87fa1d2cabc0b8c1}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em retourne id antenne \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_antenne_a38e3f5a06286c85105f7f6a7e8e56d76}{get\+Pt}} ()
+\begin{DoxyCompactList}\small\item\em retourne puissance antenne \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_antenne_a4c3ac8f6bab5a76e987f39a630cb8342}{get\+Frequence}} ()
+\begin{DoxyCompactList}\small\item\em retourne frequence antenne \end{DoxyCompactList}\item 
+Q\+PointF \mbox{\hyperlink{class_antenne_aee00940f29ab1a76d38cd59805a626d7}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em position antenne \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_antenne_aaff0060ba6e198d45f1b781bfce0fd47}\label{class_antenne_aaff0060ba6e198d45f1b781bfce0fd47}} 
+void {\bfseries show\+Id} ()
+\item 
+double \mbox{\hyperlink{class_antenne_a98a69e94661024624665bcc29ea35c4a}{get\+Highest\+Power}} (Q\+String file)
+\item 
+Q\+Color \mbox{\hyperlink{class_antenne_a2de3c57212c350baab51a57f6990904e}{get\+Antenne\+Color}} ()
+\begin{DoxyCompactList}\small\item\em retourne couleur antenne \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_antenne_a86a4e146a48ecb15aae9ab134d1f1a00}{Zone\+Radius}} ()
+\begin{DoxyCompactList}\small\item\em methode qui retourne le rayon de la zone de couverture de l antenne courante \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_antenne_a3c035a910197df8e4b74bd81c99aa3d5}{Calculer\+Puissance\+Recue}} (\mbox{\hyperlink{class_antenne}{Antenne}} $\ast$a, Q\+PointF point\+Acalculer)
+\begin{DoxyCompactList}\small\item\em calcule de la puissance recue suivant le model Free Space \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_antenne_ac222199ba9011db22cf64093a5f54acb}{get\+Special\+Puissance\+Recue}} (\mbox{\hyperlink{class_antenne}{Antenne}} $\ast$a, Q\+PointF point\+Acalculer, int alpha\+Milieu, int k\+Milieu)
+\begin{DoxyCompactList}\small\item\em Calculer la puissance recue suivant la formule d\textquotesingle{}Okumura Hata-\/\+Cost. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_antenne_a346b78f5b8d91c030b3cb7d9faba856c}{set\+Position}} (const Q\+PointF \&value)
+\begin{DoxyCompactList}\small\item\em modifier la position de l\textquotesingle{}antenne \end{DoxyCompactList}\item 
+Q\+Color \mbox{\hyperlink{class_antenne_a70d1fbace3f59ef61d5f8045ccd9a036}{color\+From\+String}} (string color)
+\item 
+\mbox{\Hypertarget{class_antenne_a7afb5d62b75fab9d2bdc06968395033f}\label{class_antenne_a7afb5d62b75fab9d2bdc06968395033f}} 
+Q\+Color {\bfseries get\+Max\+Power\+Color} ()
+\item 
+Q\+Color \mbox{\hyperlink{class_antenne_ad705e0054c8c14bf1be9542c46fb5eb4}{get\+Max\+Power\+Color}} (Q\+List$<$ \mbox{\hyperlink{class_antenne}{Antenne}} $\ast$ $>$ Antennes)
+\item 
+Q\+Color \mbox{\hyperlink{class_antenne_ab145642aa53165675adae3c9e226490f}{get\+Color}} () const
+\begin{DoxyCompactList}\small\item\em retourne la couleur de l\textquotesingle{}antenne \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_antenne_a5b39d1bee465b9c5b06571f735228e59}{set\+Color}} (const Q\+Color \&value)
+\begin{DoxyCompactList}\small\item\em modifier la couleur de l\textquotesingle{}antenne \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_antenne_a8bd1a7c9666cea02b7ce151406afcd11}{calculer\+Distance}} (\mbox{\hyperlink{class_antenne}{Antenne}} $\ast$a, Q\+PointF point)
+\begin{DoxyCompactList}\small\item\em calculer la distance entre une antenne et un point \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_antenne_ab42844a164c48cdb5456b0fb7670be74}{in\+Range}} (\mbox{\hyperlink{class_antenne}{Antenne}} $\ast$a, \mbox{\hyperlink{class_hex}{Hex}} $\ast$h)
+\begin{DoxyCompactList}\small\item\em tester si une maille appartient a la zone de couverture d une antenne \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_antenne_a1c895344d9a90bd6ad495ce1aa15604c}{Aligned}} (Q\+PointF antenne, Q\+PointF obstacle, Q\+PointF point)
+\begin{DoxyCompactList}\small\item\em teste si 3 points sont alignees \end{DoxyCompactList}\item 
+Q\+List$<$ \mbox{\hyperlink{class_hex}{Hex}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_antenne_ad4fb9ae2193ece70a39ee6f250d58d00}{get\+Zone}} () const
+\begin{DoxyCompactList}\small\item\em retourne le rayon de la zone d une antenne \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_antenne_a21a87dd64439d20c6433c0c5e875ad35}{set\+Zone}} (Q\+List$<$ \mbox{\hyperlink{class_hex}{Hex}} $\ast$ $>$ $\ast$value)
+\begin{DoxyCompactList}\small\item\em modifie la zone \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_antenne_a11f22a40685f7b264eaf14cd6b258d67}\label{class_antenne_a11f22a40685f7b264eaf14cd6b258d67}} 
+Q\+List$<$ \mbox{\hyperlink{class_hex}{Hex}} $\ast$ $>$ $\ast$ {\bfseries zone}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_antenne_aaa33f1ff8ebaf769fa62c3439a9ce7d2}\label{class_antenne_aaa33f1ff8ebaf769fa62c3439a9ce7d2}} 
+\index{Antenne@{Antenne}!Antenne@{Antenne}}
+\index{Antenne@{Antenne}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{Antenne()}{Antenne()}}
+{\footnotesize\ttfamily Antenne\+::\+Antenne (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{Q\+String}]{Antennefile }\end{DoxyParamCaption})}
+
+
+
+constructeur \mbox{\hyperlink{class_antenne}{Antenne}} pour la lecture de l\textquotesingle{}antenne dont l id est passe en argument 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em Antennefile} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_antenne_a1c895344d9a90bd6ad495ce1aa15604c}\label{class_antenne_a1c895344d9a90bd6ad495ce1aa15604c}} 
+\index{Antenne@{Antenne}!Aligned@{Aligned}}
+\index{Aligned@{Aligned}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{Aligned()}{Aligned()}}
+{\footnotesize\ttfamily double Antenne\+::\+Aligned (\begin{DoxyParamCaption}\item[{Q\+PointF}]{antenne,  }\item[{Q\+PointF}]{obstacle,  }\item[{Q\+PointF}]{point }\end{DoxyParamCaption})}
+
+
+
+teste si 3 points sont alignees 
+
+
+\begin{DoxyParams}{Parameters}
+{\em antenne} & \\
+\hline
+{\em obstacle} & \\
+\hline
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{class_antenne_a8bd1a7c9666cea02b7ce151406afcd11}\label{class_antenne_a8bd1a7c9666cea02b7ce151406afcd11}} 
+\index{Antenne@{Antenne}!calculerDistance@{calculerDistance}}
+\index{calculerDistance@{calculerDistance}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{calculerDistance()}{calculerDistance()}}
+{\footnotesize\ttfamily double Antenne\+::calculer\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_antenne}{Antenne}} $\ast$}]{a,  }\item[{Q\+PointF}]{point }\end{DoxyParamCaption})}
+
+
+
+calculer la distance entre une antenne et un point 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_antenne_a3c035a910197df8e4b74bd81c99aa3d5}\label{class_antenne_a3c035a910197df8e4b74bd81c99aa3d5}} 
+\index{Antenne@{Antenne}!CalculerPuissanceRecue@{CalculerPuissanceRecue}}
+\index{CalculerPuissanceRecue@{CalculerPuissanceRecue}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{CalculerPuissanceRecue()}{CalculerPuissanceRecue()}}
+{\footnotesize\ttfamily double Antenne\+::\+Calculer\+Puissance\+Recue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_antenne}{Antenne}} $\ast$}]{a,  }\item[{Q\+PointF}]{point\+Acalculer }\end{DoxyParamCaption})}
+
+
+
+calcule de la puissance recue suivant le model Free Space 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em point\+Acalculer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_antenne_a70d1fbace3f59ef61d5f8045ccd9a036}\label{class_antenne_a70d1fbace3f59ef61d5f8045ccd9a036}} 
+\index{Antenne@{Antenne}!colorFromString@{colorFromString}}
+\index{colorFromString@{colorFromString}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{colorFromString()}{colorFromString()}}
+{\footnotesize\ttfamily Q\+Color Antenne\+::color\+From\+String (\begin{DoxyParamCaption}\item[{string}]{color }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+Color 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{class_antenne_a2de3c57212c350baab51a57f6990904e}\label{class_antenne_a2de3c57212c350baab51a57f6990904e}} 
+\index{Antenne@{Antenne}!getAntenneColor@{getAntenneColor}}
+\index{getAntenneColor@{getAntenneColor}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{getAntenneColor()}{getAntenneColor()}}
+{\footnotesize\ttfamily Q\+Color Antenne\+::get\+Antenne\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retourne couleur antenne 
+
+\begin{DoxyReturn}{Returns}
+Q\+Color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_antenne_ab145642aa53165675adae3c9e226490f}\label{class_antenne_ab145642aa53165675adae3c9e226490f}} 
+\index{Antenne@{Antenne}!getColor@{getColor}}
+\index{getColor@{getColor}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily Q\+Color Antenne\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+retourne la couleur de l\textquotesingle{}antenne 
+
+\begin{DoxyReturn}{Returns}
+Q\+Color 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{class_antenne_a4c3ac8f6bab5a76e987f39a630cb8342}\label{class_antenne_a4c3ac8f6bab5a76e987f39a630cb8342}} 
+\index{Antenne@{Antenne}!getFrequence@{getFrequence}}
+\index{getFrequence@{getFrequence}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{getFrequence()}{getFrequence()}}
+{\footnotesize\ttfamily double Antenne\+::get\+Frequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retourne frequence antenne 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{class_antenne_a98a69e94661024624665bcc29ea35c4a}\label{class_antenne_a98a69e94661024624665bcc29ea35c4a}} 
+\index{Antenne@{Antenne}!getHighestPower@{getHighestPower}}
+\index{getHighestPower@{getHighestPower}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{getHighestPower()}{getHighestPower()}}
+{\footnotesize\ttfamily double Antenne\+::get\+Highest\+Power (\begin{DoxyParamCaption}\item[{Q\+String}]{afile }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em afile} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_antenne_ab3e1b334578ccc7c87fa1d2cabc0b8c1}\label{class_antenne_ab3e1b334578ccc7c87fa1d2cabc0b8c1}} 
+\index{Antenne@{Antenne}!getId@{getId}}
+\index{getId@{getId}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Antenne\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retourne id antenne 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_antenne_ad705e0054c8c14bf1be9542c46fb5eb4}\label{class_antenne_ad705e0054c8c14bf1be9542c46fb5eb4}} 
+\index{Antenne@{Antenne}!getMaxPowerColor@{getMaxPowerColor}}
+\index{getMaxPowerColor@{getMaxPowerColor}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{getMaxPowerColor()}{getMaxPowerColor()}}
+{\footnotesize\ttfamily Q\+Color Antenne\+::get\+Max\+Power\+Color (\begin{DoxyParamCaption}\item[{Q\+List$<$ \mbox{\hyperlink{class_antenne}{Antenne}} $\ast$ $>$}]{list }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+Color 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{class_antenne_aee00940f29ab1a76d38cd59805a626d7}\label{class_antenne_aee00940f29ab1a76d38cd59805a626d7}} 
+\index{Antenne@{Antenne}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily Q\+PointF Antenne\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+position antenne 
+
+\begin{DoxyReturn}{Returns}
+Q\+PointF 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{class_antenne_a38e3f5a06286c85105f7f6a7e8e56d76}\label{class_antenne_a38e3f5a06286c85105f7f6a7e8e56d76}} 
+\index{Antenne@{Antenne}!getPt@{getPt}}
+\index{getPt@{getPt}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{getPt()}{getPt()}}
+{\footnotesize\ttfamily double Antenne\+::get\+Pt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retourne puissance antenne 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{class_antenne_ac222199ba9011db22cf64093a5f54acb}\label{class_antenne_ac222199ba9011db22cf64093a5f54acb}} 
+\index{Antenne@{Antenne}!getSpecialPuissanceRecue@{getSpecialPuissanceRecue}}
+\index{getSpecialPuissanceRecue@{getSpecialPuissanceRecue}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{getSpecialPuissanceRecue()}{getSpecialPuissanceRecue()}}
+{\footnotesize\ttfamily double Antenne\+::get\+Special\+Puissance\+Recue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_antenne}{Antenne}} $\ast$}]{a,  }\item[{Q\+PointF}]{point\+Acalculer,  }\item[{int}]{alpha\+Milieu,  }\item[{int}]{k\+Milieu }\end{DoxyParamCaption})}
+
+
+
+Calculer la puissance recue suivant la formule d\textquotesingle{}Okumura Hata-\/\+Cost. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em point\+Acalculer} & \\
+\hline
+{\em alpha\+Milieu} & \\
+\hline
+{\em k\+Milieu} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 11
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{class_antenne_ad4fb9ae2193ece70a39ee6f250d58d00}\label{class_antenne_ad4fb9ae2193ece70a39ee6f250d58d00}} 
+\index{Antenne@{Antenne}!getZone@{getZone}}
+\index{getZone@{getZone}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{getZone()}{getZone()}}
+{\footnotesize\ttfamily Q\+List$<$ \mbox{\hyperlink{class_hex}{Hex}} $\ast$ $>$ $\ast$ Antenne\+::get\+Zone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+retourne le rayon de la zone d une antenne 
+
+\begin{DoxyReturn}{Returns}
+Q\+List$<$\+Hex $\ast$$>$ 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{class_antenne_ab42844a164c48cdb5456b0fb7670be74}\label{class_antenne_ab42844a164c48cdb5456b0fb7670be74}} 
+\index{Antenne@{Antenne}!inRange@{inRange}}
+\index{inRange@{inRange}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{inRange()}{inRange()}}
+{\footnotesize\ttfamily bool Antenne\+::in\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_antenne}{Antenne}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{class_hex}{Hex}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+
+
+tester si une maille appartient a la zone de couverture d une antenne 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em h} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 14
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{class_antenne_a5b39d1bee465b9c5b06571f735228e59}\label{class_antenne_a5b39d1bee465b9c5b06571f735228e59}} 
+\index{Antenne@{Antenne}!setColor@{setColor}}
+\index{setColor@{setColor}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Antenne\+::set\+Color (\begin{DoxyParamCaption}\item[{const Q\+Color \&}]{value }\end{DoxyParamCaption})}
+
+
+
+modifier la couleur de l\textquotesingle{}antenne 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{class_antenne_a346b78f5b8d91c030b3cb7d9faba856c}\label{class_antenne_a346b78f5b8d91c030b3cb7d9faba856c}} 
+\index{Antenne@{Antenne}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Antenne\+::set\+Position (\begin{DoxyParamCaption}\item[{const Q\+PointF \&}]{value }\end{DoxyParamCaption})}
+
+
+
+modifier la position de l\textquotesingle{}antenne 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{class_antenne_a21a87dd64439d20c6433c0c5e875ad35}\label{class_antenne_a21a87dd64439d20c6433c0c5e875ad35}} 
+\index{Antenne@{Antenne}!setZone@{setZone}}
+\index{setZone@{setZone}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{setZone()}{setZone()}}
+{\footnotesize\ttfamily void Antenne\+::set\+Zone (\begin{DoxyParamCaption}\item[{Q\+List$<$ \mbox{\hyperlink{class_hex}{Hex}} $\ast$ $>$ $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+modifie la zone 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_antenne_a86a4e146a48ecb15aae9ab134d1f1a00}\label{class_antenne_a86a4e146a48ecb15aae9ab134d1f1a00}} 
+\index{Antenne@{Antenne}!ZoneRadius@{ZoneRadius}}
+\index{ZoneRadius@{ZoneRadius}!Antenne@{Antenne}}
+\subsubsection{\texorpdfstring{ZoneRadius()}{ZoneRadius()}}
+{\footnotesize\ttfamily double Antenne\+::\+Zone\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+methode qui retourne le rayon de la zone de couverture de l antenne courante 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 18
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Antenne.\+h\item 
+Antenne.\+cpp\end{DoxyCompactItemize}

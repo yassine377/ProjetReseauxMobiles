@@ -6,68 +6,95 @@
 #include "Game.h"
 #include "antenne.h"
 
-extern Game* game;
+extern Game* game; /**< TODO: game variable */
 
 #include <QDebug> // TODO remove
+/**
+ * @brief
+ *
+ * @param parent
+ */
 Hex::Hex(QGraphicsItem *parent){
-    // draw the polygon
+    /// \brief draw the polygon
 
-    // points needed to draw hexagon: (1,0), (2,0), (3,1), (2,2), (1,2), (0,1)
+    /// \brief points needed to draw hexagon: (1,0), (2,0), (3,1), (2,2), (1,2), (0,1)
     QVector<QPointF> hexPoints;
     hexPoints << QPointF(1,0) << QPointF(2,0) << QPointF(3,1) << QPointF(2,2)
               << QPointF(1,2) << QPointF(0,1);
 
-    // scale the points
+    /// \brief scale the points
     int SCALE_BY = 40;
     for (size_t i = 0, n = hexPoints.size(); i < n; ++i){
         hexPoints[i] = hexPoints[i] * SCALE_BY;
     }
 
-    // create a polygon with the scaled points
+    /// \brief create a polygon with the scaled points
     QPolygonF hexagon(hexPoints);
 
-    // draw the poly
+    /// \brief draw the poly
     setPolygon(hexagon);
 
-    // initialize
+    /// \brief initialize
     isPlaced = false;
 
 
 }
 
+/**
+ * @brief
+ *
+ * @return bool
+ */
 bool Hex::getIsPlaced(){
     return isPlaced;
 }
 
+/**
+ * @brief retourne la nature de la maille
+ *
+ * @return QString
+ */
 QString Hex::getOwner(){
     return owner;
 }
 
+/**
+ * @brief methode pour creer un evenement
+ * clique sur QGraphicItem (Hex)
+ *
+ * @param event
+ */
 void Hex::mousePressEvent(QGraphicsSceneMouseEvent *event){
-    // if this hex is NOT placed (so it is a card) then pick it up
+    /// \brief if this hex is NOT placed (so it is a card) then pick it up
     if (getIsPlaced() == false){
         game->pickUpCard(this);
     }
 
-    // if this hex IS placed, then replace it
+    /// \brief if this hex IS placed, then replace it
     else {
         game->placeCard(this);
     }
 }
 
-void Hex::DrawOnClick(QGraphicsSceneMouseEvent *event){
-    // make right click return cardToPlace to originalPos
-    game->drawcercle();
-}
 
 
 
 
+/**
+ * @brief modifie la nature de Hex (maille)
+ * "NOONE" maille vide
+ * "Antenne" contient une antenne
+ * "Immeuble" contient un obstacle
+ * afficher icone antenne
+ * afficher icone immeuble
+ *
+ * @param Nature
+ */
 void Hex::setOwner(QString Nature){
-    // set the owner
+    /// \brief set the owner
     owner = Nature;
 
-    // change the color
+    /// \brief change the color
     if (Nature == QString("NOONE")){
         QBrush brush;
         brush.setStyle(Qt::SolidPattern);
@@ -96,12 +123,22 @@ void Hex::setOwner(QString Nature){
 
 }
 
+/**
+ * @brief retourner un boolean
+ * teste si card placee ou non
+ *
+ * @param b
+ */
 void Hex::setIsPlaced(bool b){
     isPlaced = b;
 }
 
 
 
+/**
+ * @brief dessiner les lignes de la maille
+ *
+ */
 void Hex::createLines(){
     QPointF hexCenter(x()+10,y()+40);
     QPointF finalPt(hexCenter.x(),hexCenter.y()-65);
@@ -116,15 +153,24 @@ void Hex::createLines(){
     }
 }
 
-void Hex::findNeighbors(){
-    for (size_t i = 0, n = lines.size(); i < n; i++){
-        // if the line collides with an item of type Hex, add it to neighbors
-        QList<QGraphicsItem*> cItems = lines[i]->collidingItems();
-        for (size_t j = 0; j < cItems.size(); j++){
-            Hex* item = dynamic_cast<Hex*>(cItems[j]);
-            if (cItems[j] != this && item){
-                neighbors.append(item);
-            }
-        }
-    }
+
+
+/**
+ * @brief methode retourne la puissance recue de la maille
+ *
+ * @return double
+ */
+double Hex::getPuissanceRecue() const
+{
+    return PuissanceRecue;
+}
+
+/**
+ * @brief methode modifie la puissance recue
+ *
+ * @param value
+ */
+void Hex::setPuissanceRecue(double value)
+{
+    PuissanceRecue = value;
 }

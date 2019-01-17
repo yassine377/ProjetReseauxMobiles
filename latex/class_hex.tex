@@ -1,0 +1,177 @@
+\hypertarget{class_hex}{}\section{Hex Class Reference}
+\label{class_hex}\index{Hex@{Hex}}
+
+
+Inheritance diagram for Hex\+:
+% FIG 0
+
+
+Collaboration diagram for Hex\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hex_aa2e838d9afb36b5f7d0000ec523ed777}{Hex}} (Q\+Graphics\+Item $\ast$parent=N\+U\+LL)
+\item 
+\mbox{\Hypertarget{class_hex_a42e1019e8cbd2339a52021b4d48fac83}\label{class_hex_a42e1019e8cbd2339a52021b4d48fac83}} 
+int {\bfseries get\+Attack\+Of} (int side)
+\item 
+bool \mbox{\hyperlink{class_hex_ab3088c379066efac7e39fd24cb7a5f3d}{get\+Is\+Placed}} ()
+\item 
+Q\+String \mbox{\hyperlink{class_hex_a5e3c6d3cba025b51129ac90500d80a8f}{get\+Owner}} ()
+\item 
+void \mbox{\hyperlink{class_hex_a56c086c58855a7996e83d88fd5e7916b}{mouse\+Press\+Event}} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_hex_ac6ecad537622e5c776437d7194dd1dc8}\label{class_hex_ac6ecad537622e5c776437d7194dd1dc8}} 
+void {\bfseries Draw\+On\+Click} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_hex_a4d6282b0a005876cc0fa16c5f27a9989}\label{class_hex_a4d6282b0a005876cc0fa16c5f27a9989}} 
+void {\bfseries set\+Attack\+Of} (int side, int attack)
+\item 
+void \mbox{\hyperlink{class_hex_ace642e24e5b74836e6c89ba4bbcf5b11}{set\+Owner}} (Q\+String \mbox{\hyperlink{class_antenne}{Antenne}})
+\item 
+void \mbox{\hyperlink{class_hex_ad17b48a7e4294a7dc6a79f4661275a7f}{set\+Is\+Placed}} (bool b)
+\item 
+\mbox{\Hypertarget{class_hex_ab569abea4dea6e633ee2213ddb2710c2}\label{class_hex_ab569abea4dea6e633ee2213ddb2710c2}} 
+void {\bfseries display\+Side\+Attacks} ()
+\item 
+\mbox{\Hypertarget{class_hex_a659e5583f7d88a0abfd4cda4bc60686a}\label{class_hex_a659e5583f7d88a0abfd4cda4bc60686a}} 
+void {\bfseries create\+Lines} ()
+\item 
+\mbox{\Hypertarget{class_hex_aca347da1dcbce69d3dfd20a611f233e5}\label{class_hex_aca347da1dcbce69d3dfd20a611f233e5}} 
+void {\bfseries find\+Neighbors} ()
+\item 
+double \mbox{\hyperlink{class_hex_acc6abb4c09107a205c7bc3a01506385d}{get\+Puissance\+Recue}} () const
+\begin{DoxyCompactList}\small\item\em methode retourne la puissance recue de la maille \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hex_a4c4119527eca8566ffb9093fa8f56e28}{set\+Puissance\+Recue}} (double value)
+\begin{DoxyCompactList}\small\item\em methode modifie la puissance recue \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hex_a9fd7b8cef1c3fe960292bc1c90bf4c34}\label{class_hex_a9fd7b8cef1c3fe960292bc1c90bf4c34}} 
+double {\bfseries Puissance\+Recue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hex_aa2e838d9afb36b5f7d0000ec523ed777}\label{class_hex_aa2e838d9afb36b5f7d0000ec523ed777}} 
+\index{Hex@{Hex}!Hex@{Hex}}
+\index{Hex@{Hex}!Hex@{Hex}}
+\subsubsection{\texorpdfstring{Hex()}{Hex()}}
+{\footnotesize\ttfamily Hex\+::\+Hex (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Item $\ast$}]{parent = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+draw the polygon
+
+points needed to draw hexagon\+: (1,0), (2,0), (3,1), (2,2), (1,2), (0,1)
+
+scale the points
+
+create a polygon with the scaled points
+
+draw the poly
+
+initialize 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hex_ab3088c379066efac7e39fd24cb7a5f3d}\label{class_hex_ab3088c379066efac7e39fd24cb7a5f3d}} 
+\index{Hex@{Hex}!getIsPlaced@{getIsPlaced}}
+\index{getIsPlaced@{getIsPlaced}!Hex@{Hex}}
+\subsubsection{\texorpdfstring{getIsPlaced()}{getIsPlaced()}}
+{\footnotesize\ttfamily bool Hex\+::get\+Is\+Placed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_hex_a5e3c6d3cba025b51129ac90500d80a8f}\label{class_hex_a5e3c6d3cba025b51129ac90500d80a8f}} 
+\index{Hex@{Hex}!getOwner@{getOwner}}
+\index{getOwner@{getOwner}!Hex@{Hex}}
+\subsubsection{\texorpdfstring{getOwner()}{getOwner()}}
+{\footnotesize\ttfamily Q\+String Hex\+::get\+Owner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_hex_acc6abb4c09107a205c7bc3a01506385d}\label{class_hex_acc6abb4c09107a205c7bc3a01506385d}} 
+\index{Hex@{Hex}!getPuissanceRecue@{getPuissanceRecue}}
+\index{getPuissanceRecue@{getPuissanceRecue}!Hex@{Hex}}
+\subsubsection{\texorpdfstring{getPuissanceRecue()}{getPuissanceRecue()}}
+{\footnotesize\ttfamily double Hex\+::get\+Puissance\+Recue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+methode retourne la puissance recue de la maille 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hex_a56c086c58855a7996e83d88fd5e7916b}\label{class_hex_a56c086c58855a7996e83d88fd5e7916b}} 
+\index{Hex@{Hex}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!Hex@{Hex}}
+\subsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Hex\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+if this hex is N\+OT placed (so it is a card) then pick it up
+
+if this hex IS placed, then replace it Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_hex_ad17b48a7e4294a7dc6a79f4661275a7f}\label{class_hex_ad17b48a7e4294a7dc6a79f4661275a7f}} 
+\index{Hex@{Hex}!setIsPlaced@{setIsPlaced}}
+\index{setIsPlaced@{setIsPlaced}!Hex@{Hex}}
+\subsubsection{\texorpdfstring{setIsPlaced()}{setIsPlaced()}}
+{\footnotesize\ttfamily void Hex\+::set\+Is\+Placed (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hex_ace642e24e5b74836e6c89ba4bbcf5b11}\label{class_hex_ace642e24e5b74836e6c89ba4bbcf5b11}} 
+\index{Hex@{Hex}!setOwner@{setOwner}}
+\index{setOwner@{setOwner}!Hex@{Hex}}
+\subsubsection{\texorpdfstring{setOwner()}{setOwner()}}
+{\footnotesize\ttfamily void Hex\+::set\+Owner (\begin{DoxyParamCaption}\item[{Q\+String}]{Nature }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nature} & \\
+\hline
+\end{DoxyParams}
+set the owner
+
+change the color Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{class_hex_a4c4119527eca8566ffb9093fa8f56e28}\label{class_hex_a4c4119527eca8566ffb9093fa8f56e28}} 
+\index{Hex@{Hex}!setPuissanceRecue@{setPuissanceRecue}}
+\index{setPuissanceRecue@{setPuissanceRecue}!Hex@{Hex}}
+\subsubsection{\texorpdfstring{setPuissanceRecue()}{setPuissanceRecue()}}
+{\footnotesize\ttfamily void Hex\+::set\+Puissance\+Recue (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+methode modifie la puissance recue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Hex.\+h\item 
+Hex.\+cpp\end{DoxyCompactItemize}
