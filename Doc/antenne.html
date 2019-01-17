@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- antenne.cpp -->
+  <title>Antenne Class | Qt </title>
+</head>
+<body>
+<li>Antenne</li>
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">Antenne Class</h1>
+<!-- $$$Antenne-brief -->
+<p>The QCache class is a template class that provides a cache. <a href="#details">More...</a></p>
+<!-- @@@Antenne -->
+<ul>
+<li><a href="antenne-members.html">List of all members, including inherited members</a></li>
+</ul>
+<p><b>Note:</b> All functions in this class are reentrant.</p>
+<a name="public-functions"></a>
+<h2 id="public-functions">Public Functions</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#Antenne">Antenne</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#Antenne-1">Antenne</a></b>(int <i>id</i>, int <i>Antennefile</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> double </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#Aligned">Aligned</a></b>(int <i>antenne</i>, int <i>obstacle</i>, int <i>point</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> double </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#CalculerPuissanceRecue">CalculerPuissanceRecue</a></b>(Antenne *<i>a</i>, int <i>pointAcalculer</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#ZoneRadius">ZoneRadius</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> double </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#calculerDistance">calculerDistance</a></b>(Antenne *<i>a</i>, int <i>point</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#colorFromString">colorFromString</a></b>(<i>std::string</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getAntenneColor">getAntenneColor</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getColor">getColor</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> double </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getFrequence">getFrequence</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> double </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getHighestPower">getHighestPower</a></b>(int <i>file</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getId">getId</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getMaxPowerColor">getMaxPowerColor</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getMaxPowerColor-1">getMaxPowerColor</a></b>(<i>int</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getPosition">getPosition</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> double </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getPt">getPt</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> double </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getSpecialPuissanceRecue">getSpecialPuissanceRecue</a></b>(Antenne *<i>a</i>, int <i>pointAcalculer</i>, int <i>alphaMilieu</i>, int <i>kMilieu</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int *</td><td class="memItemRight bottomAlign"><b><a href="antenne.html#getZone">getZone</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#inRange">inRange</a></b>(Antenne *<i>a</i>, Hex *<i>h</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#setColor">setColor</a></b>(const int &amp;<i>value</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#setPosition">setPosition</a></b>(const int &amp;<i>value</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#setPt">setPt</a></b>(double <i>puissance</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#setZone">setZone</a></b>(int *<i>value</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="antenne.html#showId">showId</a></b>()</td></tr>
+</table></div>
+<a name="details"></a>
+<!-- $$$Antenne-description -->
+<div class="descr">
+<h2 id="details">Detailed Description</h2>
+<p>The QCache class is a template class that provides a cache.</p>
+<p>QCache&lt;Key, T&gt; defines a cache that stores objects of type T associated with keys of type Key. For example, here's the definition of a cache that stores objects of type Employee associated with an integer key:</p>
+<pre class="cpp"></pre>
+<p>Here's how to insert an object in the cache:</p>
+<pre class="cpp"></pre>
+<p>... detailed description ommitted</p>
+</div>
+<p><b>See also </b>QPixmapCache, QHash, and QMap.</p>
+<!-- @@@Antenne -->
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$Antenne[overload1]$$$Antenne -->
+<h3 class="fn" id="Antenne"><a name="Antenne"></a>Antenne::<span class="name">Antenne</span>()</h3>
+<p>Default constructs an instance of Antenne.</p><!-- @@@Antenne -->
+<!-- $$$Antenne$$$Antenneintint -->
+<h3 class="fn" id="Antenne-1"><a name="Antenne-1"></a>Antenne::<span class="name">Antenne</span>(<span class="type">int</span> <i>id</i>, <span class="type">int</span> <i>Antennefile</i>)</h3>
+<p>Default constructs an instance of Antenne.</p><!-- @@@Antenne -->
+<!-- $$$Aligned[overload1]$$$Alignedintintint -->
+<h3 class="fn" id="Aligned"><a name="Aligned"></a><span class="type">double</span> Antenne::<span class="name">Aligned</span>(<span class="type">int</span> <i>antenne</i>, <span class="type">int</span> <i>obstacle</i>, <span class="type">int</span> <i>point</i>)</h3>
+<!-- @@@Aligned -->
+<!-- $$$CalculerPuissanceRecue[overload1]$$$CalculerPuissanceRecueAntenne*int -->
+<h3 class="fn" id="CalculerPuissanceRecue"><a name="CalculerPuissanceRecue"></a><span class="type">double</span> Antenne::<span class="name">CalculerPuissanceRecue</span>(<span class="type"><a href="antenne.html#Antenne">Antenne</a></span> *<i>a</i>, <span class="type">int</span> <i>pointAcalculer</i>)</h3>
+<!-- @@@CalculerPuissanceRecue -->
+<!-- $$$ZoneRadius[overload1]$$$ZoneRadius -->
+<h3 class="fn" id="ZoneRadius"><a name="ZoneRadius"></a><span class="type">int</span> Antenne::<span class="name">ZoneRadius</span>()</h3>
+<!-- @@@ZoneRadius -->
+<!-- $$$calculerDistance[overload1]$$$calculerDistanceAntenne*int -->
+<h3 class="fn" id="calculerDistance"><a name="calculerDistance"></a><span class="type">double</span> Antenne::<span class="name">calculerDistance</span>(<span class="type"><a href="antenne.html#Antenne">Antenne</a></span> *<i>a</i>, <span class="type">int</span> <i>point</i>)</h3>
+<!-- @@@calculerDistance -->
+<!-- $$$colorFromString[overload1]$$$colorFromStringstd::string -->
+<h3 class="fn" id="colorFromString"><a name="colorFromString"></a><span class="type">int</span> Antenne::<span class="name">colorFromString</span>(<i>std::string</i>)</h3>
+<!-- @@@colorFromString -->
+<!-- $$$getAntenneColor[overload1]$$$getAntenneColor -->
+<h3 class="fn" id="getAntenneColor"><a name="getAntenneColor"></a><span class="type">int</span> Antenne::<span class="name">getAntenneColor</span>()</h3>
+<!-- @@@getAntenneColor -->
+<!-- $$$getColor[overload1]$$$getColor -->
+<h3 class="fn" id="getColor"><a name="getColor"></a><span class="type">int</span> Antenne::<span class="name">getColor</span>() const</h3>
+<!-- @@@getColor -->
+<!-- $$$getFrequence[overload1]$$$getFrequence -->
+<h3 class="fn" id="getFrequence"><a name="getFrequence"></a><span class="type">double</span> Antenne::<span class="name">getFrequence</span>()</h3>
+<!-- @@@getFrequence -->
+<!-- $$$getHighestPower[overload1]$$$getHighestPowerint -->
+<h3 class="fn" id="getHighestPower"><a name="getHighestPower"></a><span class="type">double</span> Antenne::<span class="name">getHighestPower</span>(<span class="type">int</span> <i>file</i>)</h3>
+<!-- @@@getHighestPower -->
+<!-- $$$getId[overload1]$$$getId -->
+<h3 class="fn" id="getId"><a name="getId"></a><span class="type">int</span> Antenne::<span class="name">getId</span>()</h3>
+<!-- @@@getId -->
+<!-- $$$getMaxPowerColor[overload1]$$$getMaxPowerColor -->
+<h3 class="fn" id="getMaxPowerColor"><a name="getMaxPowerColor"></a><span class="type">int</span> Antenne::<span class="name">getMaxPowerColor</span>()</h3>
+<!-- @@@getMaxPowerColor -->
+<!-- $$$getMaxPowerColor$$$getMaxPowerColorint -->
+<h3 class="fn" id="getMaxPowerColor-1"><a name="getMaxPowerColor-1"></a><span class="type">int</span> Antenne::<span class="name">getMaxPowerColor</span>(<i>int</i>)</h3>
+<!-- @@@getMaxPowerColor -->
+<!-- $$$getPosition[overload1]$$$getPosition -->
+<h3 class="fn" id="getPosition"><a name="getPosition"></a><span class="type">int</span> Antenne::<span class="name">getPosition</span>()</h3>
+<!-- @@@getPosition -->
+<!-- $$$getPt[overload1]$$$getPt -->
+<h3 class="fn" id="getPt"><a name="getPt"></a><span class="type">double</span> Antenne::<span class="name">getPt</span>()</h3>
+<!-- @@@getPt -->
+<!-- $$$getSpecialPuissanceRecue[overload1]$$$getSpecialPuissanceRecueAntenne*intintint -->
+<h3 class="fn" id="getSpecialPuissanceRecue"><a name="getSpecialPuissanceRecue"></a><span class="type">double</span> Antenne::<span class="name">getSpecialPuissanceRecue</span>(<span class="type"><a href="antenne.html#Antenne">Antenne</a></span> *<i>a</i>, <span class="type">int</span> <i>pointAcalculer</i>, <span class="type">int</span> <i>alphaMilieu</i>, <span class="type">int</span> <i>kMilieu</i>)</h3>
+<!-- @@@getSpecialPuissanceRecue -->
+<!-- $$$getZone[overload1]$$$getZone -->
+<h3 class="fn" id="getZone"><a name="getZone"></a><span class="type">int</span> *Antenne::<span class="name">getZone</span>() const</h3>
+<!-- @@@getZone -->
+<!-- $$$inRange[overload1]$$$inRangeAntenne*Hex* -->
+<h3 class="fn" id="inRange"><a name="inRange"></a><span class="type">bool</span> Antenne::<span class="name">inRange</span>(<span class="type"><a href="antenne.html#Antenne">Antenne</a></span> *<i>a</i>, <span class="type">Hex</span> *<i>h</i>)</h3>
+<!-- @@@inRange -->
+<!-- $$$setColor[overload1]$$$setColorconstint& -->
+<h3 class="fn" id="setColor"><a name="setColor"></a><span class="type">void</span> Antenne::<span class="name">setColor</span>(const <span class="type">int</span> &amp;<i>value</i>)</h3>
+<!-- @@@setColor -->
+<!-- $$$setPosition[overload1]$$$setPositionconstint& -->
+<h3 class="fn" id="setPosition"><a name="setPosition"></a><span class="type">void</span> Antenne::<span class="name">setPosition</span>(const <span class="type">int</span> &amp;<i>value</i>)</h3>
+<!-- @@@setPosition -->
+<!-- $$$setPt[overload1]$$$setPtdouble -->
+<h3 class="fn" id="setPt"><a name="setPt"></a><span class="type">void</span> Antenne::<span class="name">setPt</span>(<span class="type">double</span> <i>puissance</i> = 0)</h3>
+<!-- @@@setPt -->
+<!-- $$$setZone[overload1]$$$setZoneint* -->
+<h3 class="fn" id="setZone"><a name="setZone"></a><span class="type">void</span> Antenne::<span class="name">setZone</span>(<span class="type">int</span> *<i>value</i>)</h3>
+<!-- @@@setZone -->
+<!-- $$$showId[overload1]$$$showId -->
+<h3 class="fn" id="showId"><a name="showId"></a><span class="type">void</span> Antenne::<span class="name">showId</span>()</h3>
+<!-- @@@showId -->
+</div>
+</body>
+</html>

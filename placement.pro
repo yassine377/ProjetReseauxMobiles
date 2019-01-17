@@ -46,7 +46,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     antenne.PNG \
-    immeuble.jpg
+    immeuble.jpg \
+    placement_uml.qmodel
 
 FORMS += \
     mainwindow.ui

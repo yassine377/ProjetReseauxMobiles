@@ -244,19 +244,22 @@ void Game::placeCard(Hex *hexToReplace){
             for(Hex *obstacle : Immeubles){
 
                 if(h->pos() != obstacle->pos() && h->getOwner() != "Antenne"){
+                    if(h->getPuissanceRecue() < ant->CalculerPuissanceRecue(ant,h->pos()))
                     h->setPuissanceRecue(ant->CalculerPuissanceRecue(ant,h->pos()));
                 }
                 else if(h->pos() == obstacle->pos()){
-                        obstacle->setPuissanceRecue(ant->getSpecialPuissanceRecue(ant, obstacle->pos(), 4,50));
+                    if(obstacle->getPuissanceRecue() < ant->CalculerPuissanceRecue(ant,h->pos()))
+                    obstacle->setPuissanceRecue(ant->getSpecialPuissanceRecue(ant, obstacle->pos(), 4,50));
                 }
                 else {
-                    qDebug() << "HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEERE" << endl;
+                    if(h->getPuissanceRecue() < ant->CalculerPuissanceRecue(ant,h->pos()))
                     h->setPuissanceRecue(ant->getSpecialPuissanceRecue(ant, h->pos(), 4,50));
                     //break;
                 }
 
 
                 if(ant->Aligned(ant->getPosition(), obstacle->pos(), h->pos()) == 0.){
+                   if(h->getPuissanceRecue() < ant->CalculerPuissanceRecue(ant,h->pos()))
                     h->setPuissanceRecue(ant->getSpecialPuissanceRecue(ant, h->pos(), 4,50));
                     break;
                 }

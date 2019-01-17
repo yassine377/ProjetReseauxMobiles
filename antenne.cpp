@@ -15,6 +15,31 @@
 #define echelle 10000
 
 
+
+/*!
+    \class Antenne
+    \brief The QCache class is a template class that provides a cache.
+
+    \ingroup tools
+    \ingroup shared
+
+    \reentrant
+
+    QCache\<Key, T\> defines a cache that stores objects of type T
+    associated with keys of type Key. For example, here's the
+    definition of a cache that stores objects of type Employee
+    associated with an integer key:
+
+    \snippet code/doc_src_qcache.cpp 0
+
+    Here's how to insert an object in the cache:
+
+    \snippet code/doc_src_qcache.cpp 1
+
+    ... detailed description ommitted
+
+    \sa QPixmapCache, QHash, QMap
+*/
 Antenne::Antenne()
 {}
 
